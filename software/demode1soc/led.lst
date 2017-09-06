@@ -1,0 +1,699 @@
+
+led.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000fffa l    d  __interrupt_vector_14	00000000 __interrupt_vector_14
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000fc00 l    d  .rodata	00000000 .rodata
+0000fc00 l    d  .rodata2	00000000 .rodata2
+0000fc00 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000210 l    d  .bss	00000000 .bss
+00000211 l    d  .noinit	00000000 .noinit
+00000212 l    d  .heap	00000000 .heap
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    df *ABS*	00000000 omsp_uart.c
+00000000 l    df *ABS*	00000000 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/430/crt0-minrt.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_movedata.o
+00000000 l    df *ABS*	00000000 crt_main_minrt.o
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 omsp_de1soc.c
+00000000 l    df *ABS*	00000000 omsp_delay.c
+00000000 l    df *ABS*	00000000 srai.o
+00000000 l    df *ABS*	00000000 srli.o
+00000000 l    df *ABS*	00000000 lib_a-memmove.o
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+00000000 l    df *ABS*	00000000 
+0000fc00 l       .text	00000000 _start
+0000fd30 g     F .text	00000012 putchar
+0000fd22 g     F .text	0000000e uartinit
+0000fdf2 g       .text	00000000 .hidden __mspabi_srli_9
+0000fd78 g       .text	00000000 .hidden __mspabi_srai_6
+0000fd82 g       .text	00000000 .hidden __mspabi_srai_1
+0000fe42 g       .text	00000000 .hidden __mspabi_srll_10
+0000fdee g       .text	00000000 .hidden __mspabi_srli_10
+0000fda4 g       .text	00000000 .hidden __mspabi_sral_10
+0000fd94 g       .text	00000000 .hidden __mspabi_sral_14
+0000fd42 g     F .text	00000014 INT_uart_rx
+0000fdda g       .text	00000000 .hidden __mspabi_srli_15
+0000fe8e g     F .text	0000003c memmove
+0000fe06 g       .text	00000000 .hidden __mspabi_srli_4
+0000fce0 g     F .text	00000006 de1soc_ledr
+0000fcf4 g     F .text	00000006 de1soc_hexhi
+0000fda8 g       .text	00000000 .hidden __mspabi_sral_9
+0000fdfa g       .text	00000000 .hidden __mspabi_srli_7
+0000fe54 g       .text	00000000 .hidden __mspabi_srll_7
+0000fe6c g       .text	00000000 .hidden __mspabi_srll_3
+0000fdb4 g       .text	00000000 .hidden __mspabi_sral_6
+0000fdc8 g       .text	00000000 .hidden __mspabi_sral_1
+0000fd58 g       .text	00000000 .hidden __mspabi_func_epilog_6
+0000fd66 g       .text	00000000 .hidden __mspabi_srai_15
+0000fe30 g       .text	00000000 .hidden __mspabi_srll_13
+0000fcfa g     F .text	00000006 short_delay
+0000fde6 g       .text	00000000 .hidden __mspabi_srli_12
+0000fd80 g       .text	00000000 .hidden __mspabi_srai_2
+0000fd7e g       .text	00000000 .hidden __mspabi_srai_3
+0000fc00 g     F .text	00000004 __crt0_start
+00000216 g       .heap	00000000 __HeapLimit
+00000216 g       .heap	00000000 __heap_end__
+0000fc04 g     F .text	0000000e __crt0_init_bss
+0000fd00 g     F .text	00000022 long_delay
+00000001 g       *ABS*	00000000 __bsssize
+0000fd70 g       .text	00000000 .hidden __mspabi_srai_10
+0000fd62 g       .text	00000000 .hidden __mspabi_func_epilog_1
+0000fce6 g     F .text	0000000e de1soc_hexlo
+0000fd5e g       .text	00000000 .hidden __mspabi_func_epilog_3
+0000fe60 g       .text	00000000 .hidden __mspabi_srll_5
+0000fe1e g       .text	00000000 .hidden __mspabi_srli
+0000fe3c g       .text	00000000 .hidden __mspabi_srll_11
+0000fe02 g       .text	00000000 .hidden __mspabi_srli_5
+00000210 g     O .bss	00000001 rxdata
+00000212 g       .noinit	00000000 end
+0000fda0 g       .text	00000000 .hidden __mspabi_sral_11
+0000fd90 g       .text	00000000 .hidden __mspabi_sral_15
+0000fd76 g       .text	00000000 .hidden __mspabi_srai_7
+0000fe5a g       .text	00000000 .hidden __mspabi_srll_6
+0000fdbc g       .text	00000000 .hidden __mspabi_sral_4
+0000fe12 g       .text	00000000 .hidden __mspabi_srli_1
+0000fe2a g       .text	00000000 .hidden __mspabi_srll_14
+0000fd8a g       .text	00000000 .hidden __mspabi_srai
+0000fd6c g       .text	00000000 .hidden __mspabi_srai_12
+0000fdde g       .text	00000000 .hidden __mspabi_srli_14
+00000010 g       *ABS*	00000000 __romdatacopysize
+0000fdb0 g       .text	00000000 .hidden __mspabi_sral_7
+0000fd74 g       .text	00000000 .hidden __mspabi_srai_8
+0000fdea g       .text	00000000 .hidden __mspabi_srli_11
+0000fdc4 g       .text	00000000 .hidden __mspabi_sral_2
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000feca g     F .text	00000014 memset
+0000fc2c g     F .text	0000008e main
+0000fd72 g       .text	00000000 .hidden __mspabi_srai_9
+0000fd6e g       .text	00000000 .hidden __mspabi_srai_11
+0000fe66 g       .text	00000000 .hidden __mspabi_srll_4
+0000fe0e g       .text	00000000 .hidden __mspabi_srli_2
+00000212 g       .heap	00000000 __heap_start__
+0000fdd4 g       .text	00000000 .hidden __mspabi_sral
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+0000fdac g       .text	00000000 .hidden __mspabi_sral_8
+0000fd98 g       .text	00000000 .hidden __mspabi_sral_13
+0000fe36 g       .text	00000000 .hidden __mspabi_srll_12
+0000fede g       *ABS*	00000000 __romdatastart
+0000fd7c g       .text	00000000 .hidden __mspabi_srai_4
+0000fdfe g       .text	00000000 .hidden __mspabi_srli_6
+0000fe0a g       .text	00000000 .hidden __mspabi_srli_3
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+00000210 g       .bss	00000000 __bssstart
+0000fd5a g       .text	00000000 .hidden __mspabi_func_epilog_5
+0000fd68 g       .text	00000000 .hidden __mspabi_srai_14
+00002200 g       .MSP430.attributes	00000000 __stack
+0000fe48 g       .text	00000000 .hidden __mspabi_srll_9
+00000200 g     O .data	00000010 c16
+0000fcba g     F .text	00000026 de1soc_init
+0000fdc0 g       .text	00000000 .hidden __mspabi_sral_3
+00000210 g       .data	00000000 _edata
+0000fd9c g       .text	00000000 .hidden __mspabi_sral_12
+00000212 g       .heap	00000000 _end
+0000fe88 g       .text	00000000 .hidden __mspabi_srll
+00000000  w      *ABS*	00000000 __high_bssstart
+0000fe24 g       .text	00000000 .hidden __mspabi_srll_15
+0000fd7a g       .text	00000000 .hidden __mspabi_srai_5
+0000fd6a g       .text	00000000 .hidden __mspabi_srai_13
+0000fde2 g       .text	00000000 .hidden __mspabi_srli_13
+00000200 g       .data	00000000 __datastart
+0000fe4e g       .text	00000000 .hidden __mspabi_srll_8
+0000fe78 g       .text	00000000 .hidden __mspabi_srll_1
+0000fc26 g     F .text	00000006 __crt0_call_just_main
+0000fc12 g     F .text	00000014 __crt0_movedata
+0000fd60 g       .text	00000000 .hidden __mspabi_func_epilog_2
+0000fdb8 g       .text	00000000 .hidden __mspabi_sral_5
+0000fd56 g       .text	00000000 .hidden __mspabi_func_epilog_7
+0000fd5c g       .text	00000000 .hidden __mspabi_func_epilog_4
+0000fe72 g       .text	00000000 .hidden __mspabi_srll_2
+0000fdf6 g       .text	00000000 .hidden __mspabi_srli_8
+
+
+
+Disassembly of section __interrupt_vector_14:
+
+0000fffa <__interrupt_vector_14>:
+    fffa:	42 fd       	interrupt service routine at 0xfd42
+
+Disassembly of section .text:
+
+0000fc00 <__crt0_start>:
+    fc00:	31 40 00 22 	mov	#8704,	r1	;#0x2200
+
+0000fc04 <__crt0_init_bss>:
+    fc04:	3c 40 10 02 	mov	#528,	r12	;#0x0210
+
+0000fc08 <.Loc.74.1>:
+    fc08:	0d 43       	clr	r13		;
+
+0000fc0a <.Loc.75.1>:
+    fc0a:	3e 40 01 00 	mov	#1,	r14	;
+
+0000fc0e <.Loc.79.1>:
+    fc0e:	b0 12 ca fe 	call	#65226		;#0xfeca
+
+0000fc12 <__crt0_movedata>:
+    fc12:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000fc16 <.Loc.116.1>:
+    fc16:	3d 40 de fe 	mov	#65246,	r13	;#0xfede
+
+0000fc1a <.Loc.119.1>:
+    fc1a:	0d 9c       	cmp	r12,	r13	;
+
+0000fc1c <.Loc.120.1>:
+    fc1c:	04 24       	jz	$+10     	;abs 0xfc26
+
+0000fc1e <.Loc.122.1>:
+    fc1e:	3e 40 10 00 	mov	#16,	r14	;#0x0010
+
+0000fc22 <.Loc.124.1>:
+    fc22:	b0 12 8e fe 	call	#65166		;#0xfe8e
+
+0000fc26 <__crt0_call_just_main>:
+    fc26:	0c 43       	clr	r12		;
+
+0000fc28 <.Loc.181.1>:
+    fc28:	b0 12 2c fc 	call	#64556		;#0xfc2c
+
+0000fc2c <main>:
+    fc2c:	0a 12       	push	r10		;
+    fc2e:	09 12       	push	r9		;
+    fc30:	08 12       	push	r8		;
+    fc32:	07 12       	push	r7		;
+    fc34:	06 12       	push	r6		;
+    fc36:	05 12       	push	r5		;
+    fc38:	04 12       	push	r4		;
+    fc3a:	b0 12 ba fc 	call	#64698		;#0xfcba
+    fc3e:	47 43       	clr.b	r7		;
+    fc40:	55 43       	mov.b	#1,	r5	;r3 As==01
+    fc42:	36 40 00 02 	mov	#512,	r6	;#0x0200
+    fc46:	38 40 30 fd 	mov	#64816,	r8	;#0xfd30
+
+0000fc4a <.L6>:
+    fc4a:	0a 47       	mov	r7,	r10	;
+    fc4c:	37 52       	add	#8,	r7	;r2 As==11
+    fc4e:	09 45       	mov	r5,	r9	;
+    fc50:	34 40 e0 fc 	mov	#64736,	r4	;#0xfce0
+
+0000fc54 <.L5>:
+    fc54:	0c 4a       	mov	r10,	r12	;
+    fc56:	b0 12 e6 fd 	call	#64998		;#0xfde6
+    fc5a:	0c 56       	add	r6,	r12	;
+    fc5c:	6c 4c       	mov.b	@r12,	r12	;
+    fc5e:	88 12       	call	r8		;
+    fc60:	0c 4a       	mov	r10,	r12	;
+    fc62:	b0 12 74 fd 	call	#64884		;#0xfd74
+    fc66:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+    fc6a:	0c 56       	add	r6,	r12	;
+    fc6c:	6c 4c       	mov.b	@r12,	r12	;
+    fc6e:	88 12       	call	r8		;
+    fc70:	0c 4a       	mov	r10,	r12	;
+    fc72:	b0 12 7c fd 	call	#64892		;#0xfd7c
+    fc76:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+    fc7a:	0c 56       	add	r6,	r12	;
+    fc7c:	6c 4c       	mov.b	@r12,	r12	;
+    fc7e:	88 12       	call	r8		;
+    fc80:	0c 4a       	mov	r10,	r12	;
+    fc82:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+    fc86:	0c 56       	add	r6,	r12	;
+    fc88:	6c 4c       	mov.b	@r12,	r12	;
+    fc8a:	88 12       	call	r8		;
+    fc8c:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    fc90:	88 12       	call	r8		;
+    fc92:	0c 49       	mov	r9,	r12	;
+    fc94:	84 12       	call	r4		;
+    fc96:	0c 4a       	mov	r10,	r12	;
+    fc98:	b0 12 e6 fc 	call	#64742		;#0xfce6
+    fc9c:	0c 4a       	mov	r10,	r12	;
+    fc9e:	b0 12 f4 fc 	call	#64756		;#0xfcf4
+    fca2:	7c 40 64 00 	mov.b	#100,	r12	;#0x0064
+    fca6:	b0 12 00 fd 	call	#64768		;#0xfd00
+    fcaa:	49 59       	rla.b	r9		;
+    fcac:	39 f0 ff 00 	and	#255,	r9	;#0x00ff
+    fcb0:	1a 53       	inc	r10		;
+    fcb2:	0a 97       	cmp	r7,	r10	;
+    fcb4:	cf 23       	jnz	$-96     	;abs 0xfc54
+    fcb6:	30 40 4a fc 	br	#0xfc4a		;
+
+0000fcba <de1soc_init>:
+    fcba:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    fcbe:	20 01 
+    fcc0:	f2 43 22 00 	mov.b	#-1,	&0x0022	;r3 As==11
+    fcc4:	f2 43 2a 00 	mov.b	#-1,	&0x002a	;r3 As==11
+    fcc8:	f2 43 1a 00 	mov.b	#-1,	&0x001a	;r3 As==11
+    fccc:	f2 43 1e 00 	mov.b	#-1,	&0x001e	;r3 As==11
+    fcd0:	f2 43 32 00 	mov.b	#-1,	&0x0032	;r3 As==11
+    fcd4:	b0 12 22 fd 	call	#64802		;#0xfd22
+    fcd8:	03 43       	nop			
+    fcda:	32 d2       	eint			
+    fcdc:	03 43       	nop			
+    fcde:	30 41       	ret			
+
+0000fce0 <de1soc_ledr>:
+    fce0:	c2 4c 21 00 	mov.b	r12,	&0x0021	;
+    fce4:	30 41       	ret			
+
+0000fce6 <de1soc_hexlo>:
+    fce6:	c2 4c 19 00 	mov.b	r12,	&0x0019	;
+    fcea:	b0 12 74 fd 	call	#64884		;#0xfd74
+    fcee:	c2 4c 1d 00 	mov.b	r12,	&0x001d	;
+    fcf2:	30 41       	ret			
+
+0000fcf4 <de1soc_hexhi>:
+    fcf4:	c2 4c 31 00 	mov.b	r12,	&0x0031	;
+    fcf8:	30 41       	ret			
+
+0000fcfa <short_delay>:
+    fcfa:	1c 83       	dec	r12		;
+    fcfc:	fe 23       	jnz	$-2      	;abs 0xfcfa
+    fcfe:	30 41       	ret			
+
+0000fd00 <long_delay>:
+    fd00:	0a 12       	push	r10		;
+    fd02:	09 12       	push	r9		;
+    fd04:	08 12       	push	r8		;
+    fd06:	0a 4c       	mov	r12,	r10	;
+    fd08:	39 40 fa fc 	mov	#64762,	r9	;#0xfcfa
+    fd0c:	38 40 10 27 	mov	#10000,	r8	;#0x2710
+
+0000fd10 <.L3>:
+    fd10:	0a 93       	cmp	#0,	r10	;r3 As==00
+    fd12:	02 20       	jnz	$+6      	;abs 0xfd18
+    fd14:	30 40 5e fd 	br	#0xfd5e		;
+
+0000fd18 <.L4>:
+    fd18:	0c 48       	mov	r8,	r12	;
+    fd1a:	89 12       	call	r9		;
+    fd1c:	3a 53       	add	#-1,	r10	;r3 As==11
+    fd1e:	30 40 10 fd 	br	#0xfd10		;
+
+0000fd22 <uartinit>:
+    fd22:	b2 40 b1 01 	mov	#433,	&0x0082	;#0x01b1
+    fd26:	82 00 
+    fd28:	f2 40 11 00 	mov.b	#17,	&0x0080	;#0x0011
+    fd2c:	80 00 
+    fd2e:	30 41       	ret			
+
+0000fd30 <putchar>:
+    fd30:	7d 40 81 00 	mov.b	#129,	r13	;#0x0081
+
+0000fd34 <.L3>:
+    fd34:	fd b2 00 00 	bit.b	#8,	0(r13)	;r2 As==11
+    fd38:	fd 23       	jnz	$-4      	;abs 0xfd34
+    fd3a:	c2 4c 84 00 	mov.b	r12,	&0x0084	;
+    fd3e:	4c 43       	clr.b	r12		;
+    fd40:	30 41       	ret			
+
+0000fd42 <INT_uart_rx>:
+    fd42:	d2 42 85 00 	mov.b	&0x0085,&0x0210	;0x0085
+    fd46:	10 02 
+    fd48:	f2 40 10 00 	mov.b	#16,	&0x0081	;#0x0010
+    fd4c:	81 00 
+    fd4e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    fd52:	00 00 
+    fd54:	00 13       	reti			
+
+0000fd56 <__mspabi_func_epilog_7>:
+    fd56:	34 41       	pop	r4		;
+
+0000fd58 <__mspabi_func_epilog_6>:
+    fd58:	35 41       	pop	r5		;
+
+0000fd5a <__mspabi_func_epilog_5>:
+    fd5a:	36 41       	pop	r6		;
+
+0000fd5c <__mspabi_func_epilog_4>:
+    fd5c:	37 41       	pop	r7		;
+
+0000fd5e <__mspabi_func_epilog_3>:
+    fd5e:	38 41       	pop	r8		;
+
+0000fd60 <__mspabi_func_epilog_2>:
+    fd60:	39 41       	pop	r9		;
+
+0000fd62 <__mspabi_func_epilog_1>:
+    fd62:	3a 41       	pop	r10		;
+    fd64:	30 41       	ret			
+
+0000fd66 <__mspabi_srai_15>:
+    fd66:	0c 11       	rra	r12		;
+
+0000fd68 <__mspabi_srai_14>:
+    fd68:	0c 11       	rra	r12		;
+
+0000fd6a <__mspabi_srai_13>:
+    fd6a:	0c 11       	rra	r12		;
+
+0000fd6c <__mspabi_srai_12>:
+    fd6c:	0c 11       	rra	r12		;
+
+0000fd6e <__mspabi_srai_11>:
+    fd6e:	0c 11       	rra	r12		;
+
+0000fd70 <__mspabi_srai_10>:
+    fd70:	0c 11       	rra	r12		;
+
+0000fd72 <__mspabi_srai_9>:
+    fd72:	0c 11       	rra	r12		;
+
+0000fd74 <__mspabi_srai_8>:
+    fd74:	0c 11       	rra	r12		;
+
+0000fd76 <__mspabi_srai_7>:
+    fd76:	0c 11       	rra	r12		;
+
+0000fd78 <__mspabi_srai_6>:
+    fd78:	0c 11       	rra	r12		;
+
+0000fd7a <__mspabi_srai_5>:
+    fd7a:	0c 11       	rra	r12		;
+
+0000fd7c <__mspabi_srai_4>:
+    fd7c:	0c 11       	rra	r12		;
+
+0000fd7e <__mspabi_srai_3>:
+    fd7e:	0c 11       	rra	r12		;
+
+0000fd80 <__mspabi_srai_2>:
+    fd80:	0c 11       	rra	r12		;
+
+0000fd82 <__mspabi_srai_1>:
+    fd82:	0c 11       	rra	r12		;
+    fd84:	30 41       	ret			
+
+0000fd86 <.L11>:
+    fd86:	3d 53       	add	#-1,	r13	;r3 As==11
+    fd88:	0c 11       	rra	r12		;
+
+0000fd8a <__mspabi_srai>:
+    fd8a:	0d 93       	cmp	#0,	r13	;r3 As==00
+    fd8c:	fc 23       	jnz	$-6      	;abs 0xfd86
+    fd8e:	30 41       	ret			
+
+0000fd90 <__mspabi_sral_15>:
+    fd90:	0d 11       	rra	r13		;
+    fd92:	0c 10       	rrc	r12		;
+
+0000fd94 <__mspabi_sral_14>:
+    fd94:	0d 11       	rra	r13		;
+    fd96:	0c 10       	rrc	r12		;
+
+0000fd98 <__mspabi_sral_13>:
+    fd98:	0d 11       	rra	r13		;
+    fd9a:	0c 10       	rrc	r12		;
+
+0000fd9c <__mspabi_sral_12>:
+    fd9c:	0d 11       	rra	r13		;
+    fd9e:	0c 10       	rrc	r12		;
+
+0000fda0 <__mspabi_sral_11>:
+    fda0:	0d 11       	rra	r13		;
+    fda2:	0c 10       	rrc	r12		;
+
+0000fda4 <__mspabi_sral_10>:
+    fda4:	0d 11       	rra	r13		;
+    fda6:	0c 10       	rrc	r12		;
+
+0000fda8 <__mspabi_sral_9>:
+    fda8:	0d 11       	rra	r13		;
+    fdaa:	0c 10       	rrc	r12		;
+
+0000fdac <__mspabi_sral_8>:
+    fdac:	0d 11       	rra	r13		;
+    fdae:	0c 10       	rrc	r12		;
+
+0000fdb0 <__mspabi_sral_7>:
+    fdb0:	0d 11       	rra	r13		;
+    fdb2:	0c 10       	rrc	r12		;
+
+0000fdb4 <__mspabi_sral_6>:
+    fdb4:	0d 11       	rra	r13		;
+    fdb6:	0c 10       	rrc	r12		;
+
+0000fdb8 <__mspabi_sral_5>:
+    fdb8:	0d 11       	rra	r13		;
+    fdba:	0c 10       	rrc	r12		;
+
+0000fdbc <__mspabi_sral_4>:
+    fdbc:	0d 11       	rra	r13		;
+    fdbe:	0c 10       	rrc	r12		;
+
+0000fdc0 <__mspabi_sral_3>:
+    fdc0:	0d 11       	rra	r13		;
+    fdc2:	0c 10       	rrc	r12		;
+
+0000fdc4 <__mspabi_sral_2>:
+    fdc4:	0d 11       	rra	r13		;
+    fdc6:	0c 10       	rrc	r12		;
+
+0000fdc8 <__mspabi_sral_1>:
+    fdc8:	0d 11       	rra	r13		;
+    fdca:	0c 10       	rrc	r12		;
+    fdcc:	30 41       	ret			
+
+0000fdce <.L12>:
+    fdce:	3e 53       	add	#-1,	r14	;r3 As==11
+    fdd0:	0d 11       	rra	r13		;
+    fdd2:	0c 10       	rrc	r12		;
+
+0000fdd4 <__mspabi_sral>:
+    fdd4:	0e 93       	cmp	#0,	r14	;r3 As==00
+    fdd6:	fb 23       	jnz	$-8      	;abs 0xfdce
+    fdd8:	30 41       	ret			
+
+0000fdda <__mspabi_srli_15>:
+    fdda:	12 c3       	clrc			
+    fddc:	0c 10       	rrc	r12		;
+
+0000fdde <__mspabi_srli_14>:
+    fdde:	12 c3       	clrc			
+    fde0:	0c 10       	rrc	r12		;
+
+0000fde2 <__mspabi_srli_13>:
+    fde2:	12 c3       	clrc			
+    fde4:	0c 10       	rrc	r12		;
+
+0000fde6 <__mspabi_srli_12>:
+    fde6:	12 c3       	clrc			
+    fde8:	0c 10       	rrc	r12		;
+
+0000fdea <__mspabi_srli_11>:
+    fdea:	12 c3       	clrc			
+    fdec:	0c 10       	rrc	r12		;
+
+0000fdee <__mspabi_srli_10>:
+    fdee:	12 c3       	clrc			
+    fdf0:	0c 10       	rrc	r12		;
+
+0000fdf2 <__mspabi_srli_9>:
+    fdf2:	12 c3       	clrc			
+    fdf4:	0c 10       	rrc	r12		;
+
+0000fdf6 <__mspabi_srli_8>:
+    fdf6:	12 c3       	clrc			
+    fdf8:	0c 10       	rrc	r12		;
+
+0000fdfa <__mspabi_srli_7>:
+    fdfa:	12 c3       	clrc			
+    fdfc:	0c 10       	rrc	r12		;
+
+0000fdfe <__mspabi_srli_6>:
+    fdfe:	12 c3       	clrc			
+    fe00:	0c 10       	rrc	r12		;
+
+0000fe02 <__mspabi_srli_5>:
+    fe02:	12 c3       	clrc			
+    fe04:	0c 10       	rrc	r12		;
+
+0000fe06 <__mspabi_srli_4>:
+    fe06:	12 c3       	clrc			
+    fe08:	0c 10       	rrc	r12		;
+
+0000fe0a <__mspabi_srli_3>:
+    fe0a:	12 c3       	clrc			
+    fe0c:	0c 10       	rrc	r12		;
+
+0000fe0e <__mspabi_srli_2>:
+    fe0e:	12 c3       	clrc			
+    fe10:	0c 10       	rrc	r12		;
+
+0000fe12 <__mspabi_srli_1>:
+    fe12:	12 c3       	clrc			
+    fe14:	0c 10       	rrc	r12		;
+    fe16:	30 41       	ret			
+
+0000fe18 <.L11>:
+    fe18:	3d 53       	add	#-1,	r13	;r3 As==11
+    fe1a:	12 c3       	clrc			
+    fe1c:	0c 10       	rrc	r12		;
+
+0000fe1e <__mspabi_srli>:
+    fe1e:	0d 93       	cmp	#0,	r13	;r3 As==00
+    fe20:	fb 23       	jnz	$-8      	;abs 0xfe18
+    fe22:	30 41       	ret			
+
+0000fe24 <__mspabi_srll_15>:
+    fe24:	12 c3       	clrc			
+    fe26:	0d 10       	rrc	r13		;
+    fe28:	0c 10       	rrc	r12		;
+
+0000fe2a <__mspabi_srll_14>:
+    fe2a:	12 c3       	clrc			
+    fe2c:	0d 10       	rrc	r13		;
+    fe2e:	0c 10       	rrc	r12		;
+
+0000fe30 <__mspabi_srll_13>:
+    fe30:	12 c3       	clrc			
+    fe32:	0d 10       	rrc	r13		;
+    fe34:	0c 10       	rrc	r12		;
+
+0000fe36 <__mspabi_srll_12>:
+    fe36:	12 c3       	clrc			
+    fe38:	0d 10       	rrc	r13		;
+    fe3a:	0c 10       	rrc	r12		;
+
+0000fe3c <__mspabi_srll_11>:
+    fe3c:	12 c3       	clrc			
+    fe3e:	0d 10       	rrc	r13		;
+    fe40:	0c 10       	rrc	r12		;
+
+0000fe42 <__mspabi_srll_10>:
+    fe42:	12 c3       	clrc			
+    fe44:	0d 10       	rrc	r13		;
+    fe46:	0c 10       	rrc	r12		;
+
+0000fe48 <__mspabi_srll_9>:
+    fe48:	12 c3       	clrc			
+    fe4a:	0d 10       	rrc	r13		;
+    fe4c:	0c 10       	rrc	r12		;
+
+0000fe4e <__mspabi_srll_8>:
+    fe4e:	12 c3       	clrc			
+    fe50:	0d 10       	rrc	r13		;
+    fe52:	0c 10       	rrc	r12		;
+
+0000fe54 <__mspabi_srll_7>:
+    fe54:	12 c3       	clrc			
+    fe56:	0d 10       	rrc	r13		;
+    fe58:	0c 10       	rrc	r12		;
+
+0000fe5a <__mspabi_srll_6>:
+    fe5a:	12 c3       	clrc			
+    fe5c:	0d 10       	rrc	r13		;
+    fe5e:	0c 10       	rrc	r12		;
+
+0000fe60 <__mspabi_srll_5>:
+    fe60:	12 c3       	clrc			
+    fe62:	0d 10       	rrc	r13		;
+    fe64:	0c 10       	rrc	r12		;
+
+0000fe66 <__mspabi_srll_4>:
+    fe66:	12 c3       	clrc			
+    fe68:	0d 10       	rrc	r13		;
+    fe6a:	0c 10       	rrc	r12		;
+
+0000fe6c <__mspabi_srll_3>:
+    fe6c:	12 c3       	clrc			
+    fe6e:	0d 10       	rrc	r13		;
+    fe70:	0c 10       	rrc	r12		;
+
+0000fe72 <__mspabi_srll_2>:
+    fe72:	12 c3       	clrc			
+    fe74:	0d 10       	rrc	r13		;
+    fe76:	0c 10       	rrc	r12		;
+
+0000fe78 <__mspabi_srll_1>:
+    fe78:	12 c3       	clrc			
+    fe7a:	0d 10       	rrc	r13		;
+    fe7c:	0c 10       	rrc	r12		;
+    fe7e:	30 41       	ret			
+
+0000fe80 <.L12>:
+    fe80:	3e 53       	add	#-1,	r14	;r3 As==11
+    fe82:	12 c3       	clrc			
+    fe84:	0d 10       	rrc	r13		;
+    fe86:	0c 10       	rrc	r12		;
+
+0000fe88 <__mspabi_srll>:
+    fe88:	0e 93       	cmp	#0,	r14	;r3 As==00
+    fe8a:	fa 23       	jnz	$-10     	;abs 0xfe80
+    fe8c:	30 41       	ret			
+
+0000fe8e <memmove>:
+    fe8e:	0b 4c       	mov	r12,	r11	;
+    fe90:	0b 5e       	add	r14,	r11	;
+
+0000fe92 <.Loc.69.1>:
+    fe92:	0d 9c       	cmp	r12,	r13	;
+    fe94:	09 28       	jnc	$+20     	;abs 0xfea8
+
+0000fe96 <.L4>:
+    fe96:	0e 4c       	mov	r12,	r14	;
+
+0000fe98 <.L3>:
+    fe98:	0b 9e       	cmp	r14,	r11	;
+    fe9a:	10 24       	jz	$+34     	;abs 0xfebc
+
+0000fe9c <.LVL3>:
+    fe9c:	ee 4d 00 00 	mov.b	@r13,	0(r14)	;
+    fea0:	1e 53       	inc	r14		;
+
+0000fea2 <.LVL4>:
+    fea2:	1d 53       	inc	r13		;
+    fea4:	30 40 98 fe 	br	#0xfe98		;
+
+0000fea8 <.L2>:
+    fea8:	0f 4d       	mov	r13,	r15	;
+    feaa:	0f 5e       	add	r14,	r15	;
+    feac:	0c 9f       	cmp	r15,	r12	;
+    feae:	f3 2f       	jc	$-24     	;abs 0xfe96
+
+0000feb0 <.LVL6>:
+    feb0:	0d 4f       	mov	r15,	r13	;
+
+0000feb2 <.LVL7>:
+    feb2:	0e 8f       	sub	r15,	r14	;
+
+0000feb4 <.L5>:
+    feb4:	0f 4d       	mov	r13,	r15	;
+    feb6:	0f 5e       	add	r14,	r15	;
+    feb8:	0f 93       	cmp	#0,	r15	;r3 As==00
+    feba:	01 20       	jnz	$+4      	;abs 0xfebe
+
+0000febc <.L9>:
+    febc:	30 41       	ret			
+
+0000febe <.L6>:
+    febe:	3b 53       	add	#-1,	r11	;r3 As==11
+    fec0:	3d 53       	add	#-1,	r13	;r3 As==11
+
+0000fec2 <.LVL12>:
+    fec2:	eb 4d 00 00 	mov.b	@r13,	0(r11)	;
+    fec6:	30 40 b4 fe 	br	#0xfeb4		;
+
+0000feca <memset>:
+    feca:	0f 4c       	mov	r12,	r15	;
+    fecc:	0e 5c       	add	r12,	r14	;
+
+0000fece <.L2>:
+    fece:	0f 9e       	cmp	r14,	r15	;
+    fed0:	01 20       	jnz	$+4      	;abs 0xfed4
+
+0000fed2 <.Loc.104.1>:
+    fed2:	30 41       	ret			
+
+0000fed4 <.L3>:
+    fed4:	cf 4d 00 00 	mov.b	r13,	0(r15)	;
+    fed8:	1f 53       	inc	r15		;
+
+0000feda <.LVL4>:
+    feda:	30 40 ce fe 	br	#0xfece		;
