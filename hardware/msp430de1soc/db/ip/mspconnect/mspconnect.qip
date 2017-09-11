@@ -2,7 +2,11 @@ set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_TOOL_N
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_TOOL_VERSION "17.0"
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "mspconnect" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../../mspconnect.sopcinfo"]
+<<<<<<< HEAD
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name SLD_INFO "QSYS_NAME mspconnect HAS_SOPCINFO 1 GENERATION_ID 1505157723"
+=======
+set_global_assignment -entity "mspconnect" -library "mspconnect" -name SLD_INFO "QSYS_NAME mspconnect HAS_SOPCINFO 1 GENERATION_ID 1505156137"
+>>>>>>> cdd9a0bb4e706fd0d2665f18fa5e87acd2b9eed4
 set_global_assignment -library "mspconnect" -name SLD_FILE [file join $::quartus(qip_path) "mspconnect.debuginfo"]
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
@@ -14,7 +18,11 @@ set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPON
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_VERSION "MS4w"
+<<<<<<< HEAD
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTUwNTE1NzcyMw==::QXV0byBHRU5FUkFUSU9OX0lE"
+=======
+set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTUwNTE1NjEzNw==::QXV0byBHRU5FUkFUSU9OX0lE"
+>>>>>>> cdd9a0bb4e706fd0d2665f18fa5e87acd2b9eed4
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
 set_global_assignment -entity "mspconnect" -library "mspconnect" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="

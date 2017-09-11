@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="mspconnect" kind="system" version="17.0" fabric="QSYS">
  <!-- Format version 17.0 602 (Future versions may contain additional information.) -->
+<<<<<<< HEAD
  <!-- 2017.09.11.15:22:09 -->
+=======
+ <!-- 2017.09.11.14:55:42 -->
+>>>>>>> cdd9a0bb4e706fd0d2665f18fa5e87acd2b9eed4
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +57,11 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
+<<<<<<< HEAD
   <value>1505157723</value>
+=======
+  <value>1505156137</value>
+>>>>>>> cdd9a0bb4e706fd0d2665f18fa5e87acd2b9eed4
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -4694,5 +4702,9 @@ parameters are a RESULT of the module parameters. -->
   <version>17.0</version>
  </plugin>
  <reportVersion>17.0 602</reportVersion>
+<<<<<<< HEAD
  <uniqueIdentifier>685B35C280900000015E72643F0E</uniqueIdentifier>
+=======
+ <uniqueIdentifier>685B35C280900000015E724C07CC</uniqueIdentifier>
+>>>>>>> cdd9a0bb4e706fd0d2665f18fa5e87acd2b9eed4
 </EnsembleReport>
