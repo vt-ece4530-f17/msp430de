@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<EnsembleReport name="mspconnect" kind="system" version="16.0" fabric="QSYS">
- <!-- Format version 16.0 222 (Future versions may contain additional information.) -->
- <!-- 2016.08.04.22:55:19 -->
+<EnsembleReport name="mspconnect" kind="system" version="17.0" fabric="QSYS">
+ <!-- Format version 17.0 602 (Future versions may contain additional information.) -->
+ <!-- 2017.09.11.13:13:18 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1470365704</value>
+  <value>1505149992</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -147,7 +147,7 @@
   <visible>false</visible>
   <valid>true</valid>
  </parameter>
- <module name="clk_0" kind="clock_source" version="16.0" path="clk_0">
+ <module name="clk_0" kind="clock_source" version="17.0" path="clk_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="clockFrequency">
@@ -200,7 +200,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk_in" kind="clock_sink" version="16.0">
+  <interface name="clk_in" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -265,7 +265,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="clk_in_reset" kind="reset_sink" version="16.0">
+  <interface name="clk_in_reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -314,7 +314,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset_n</role>
    </port>
   </interface>
-  <interface name="clk" kind="clock_source" version="16.0">
+  <interface name="clk" kind="clock_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -413,7 +413,7 @@ parameters are a RESULT of the module parameters. -->
     <name>rst_controller.clk</name>
    </clockDomainMember>
   </interface>
-  <interface name="clk_reset" kind="reset_source" version="16.0">
+  <interface name="clk_reset" kind="reset_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -478,7 +478,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="master_0"
    kind="altera_jtag_avalon_master"
-   version="16.0"
+   version="17.0"
    path="master_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -572,7 +572,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="16.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -617,7 +617,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="clk_reset" kind="reset_sink" version="16.0">
+  <interface name="clk_reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -662,7 +662,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="master" kind="avalon_master" version="16.0">
+  <interface name="master" kind="avalon_master" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -989,7 +989,7 @@ parameters are a RESULT of the module parameters. -->
     <span>4294967296</span>
    </memoryBlock>
   </interface>
-  <interface name="master_reset" kind="reset_source" version="16.0">
+  <interface name="master_reset" kind="reset_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1054,24 +1054,24 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="rs232_0"
    kind="altera_up_avalon_rs232"
-   version="15.1"
+   version="17.0"
    path="rs232_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
+  <parameter name="ref_clk_freq">
+   <type>double</type>
+   <value>5.0E7</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="avalon_bus_type">
    <type>java.lang.String</type>
    <value>Memory Mapped</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="clk_rate">
-   <type>int</type>
-   <value>50000000</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="baud">
@@ -1142,7 +1142,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="16.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1203,7 +1203,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="reset" kind="reset_sink" version="16.0">
+  <interface name="reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1248,7 +1248,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="avalon_rs232_slave" kind="avalon_slave" version="16.0">
+  <interface name="avalon_rs232_slave" kind="avalon_slave" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1625,7 +1625,7 @@ parameters are a RESULT of the module parameters. -->
     <role>readdata</role>
    </port>
   </interface>
-  <interface name="interrupt" kind="interrupt_sender" version="16.0">
+  <interface name="interrupt" kind="interrupt_sender" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1702,7 +1702,7 @@ parameters are a RESULT of the module parameters. -->
     <role>irq</role>
    </port>
   </interface>
-  <interface name="external_interface" kind="conduit_end" version="16.0">
+  <interface name="external_interface" kind="conduit_end" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1757,24 +1757,24 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="rs232_1"
    kind="altera_up_avalon_rs232"
-   version="15.1"
+   version="17.0"
    path="rs232_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
+  <parameter name="ref_clk_freq">
+   <type>double</type>
+   <value>5.0E7</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="avalon_bus_type">
    <type>java.lang.String</type>
    <value>Memory Mapped</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="clk_rate">
-   <type>int</type>
-   <value>50000000</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="baud">
@@ -1845,7 +1845,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="16.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1906,7 +1906,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="reset" kind="reset_sink" version="16.0">
+  <interface name="reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1951,7 +1951,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="avalon_rs232_slave" kind="avalon_slave" version="16.0">
+  <interface name="avalon_rs232_slave" kind="avalon_slave" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2328,7 +2328,7 @@ parameters are a RESULT of the module parameters. -->
     <role>readdata</role>
    </port>
   </interface>
-  <interface name="interrupt" kind="interrupt_sender" version="16.0">
+  <interface name="interrupt" kind="interrupt_sender" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2405,7 +2405,7 @@ parameters are a RESULT of the module parameters. -->
     <role>irq</role>
    </port>
   </interface>
-  <interface name="external_interface" kind="conduit_end" version="16.0">
+  <interface name="external_interface" kind="conduit_end" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2460,7 +2460,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="mm_interconnect_0"
    kind="altera_mm_interconnect"
-   version="16.0"
+   version="17.0"
    path="mm_interconnect_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -2545,7 +2545,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk_0_clk" kind="clock_sink" version="16.0">
+  <interface name="clk_0_clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2593,7 +2593,7 @@ parameters are a RESULT of the module parameters. -->
   <interface
      name="master_0_clk_reset_reset_bridge_in_reset"
      kind="reset_sink"
-     version="16.0">
+     version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2641,7 +2641,7 @@ parameters are a RESULT of the module parameters. -->
   <interface
      name="rs232_0_reset_reset_bridge_in_reset"
      kind="reset_sink"
-     version="16.0">
+     version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2686,7 +2686,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="master_0_master" kind="avalon_slave" version="16.0">
+  <interface name="master_0_master" kind="avalon_slave" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3073,7 +3073,7 @@ parameters are a RESULT of the module parameters. -->
     <role>writedata</role>
    </port>
   </interface>
-  <interface name="rs232_0_avalon_rs232_slave" kind="avalon_master" version="16.0">
+  <interface name="rs232_0_avalon_rs232_slave" kind="avalon_master" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3386,7 +3386,7 @@ parameters are a RESULT of the module parameters. -->
     <span>8</span>
    </memoryBlock>
   </interface>
-  <interface name="rs232_1_avalon_rs232_slave" kind="avalon_master" version="16.0">
+  <interface name="rs232_1_avalon_rs232_slave" kind="avalon_master" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3703,7 +3703,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="rst_controller"
    kind="altera_reset_controller"
-   version="16.0"
+   version="17.0"
    path="rst_controller">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -3923,7 +3923,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="reset_in0" kind="reset_sink" version="16.0">
+  <interface name="reset_in0" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3968,7 +3968,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="clk" kind="clock_sink" version="16.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -4013,7 +4013,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="reset_out" kind="reset_source" version="16.0">
+  <interface name="reset_out" kind="reset_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -4078,7 +4078,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/master_0.clk"
    kind="clock"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk"
    end="master_0.clk">
   <parameter name="deviceFamily">
@@ -4105,7 +4105,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/rs232_0.clk"
    kind="clock"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk"
    end="rs232_0.clk">
   <parameter name="deviceFamily">
@@ -4132,7 +4132,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/rs232_1.clk"
    kind="clock"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk"
    end="rs232_1.clk">
   <parameter name="deviceFamily">
@@ -4159,7 +4159,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk_reset/master_0.clk_reset"
    kind="reset"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk_reset"
    end="master_0.clk_reset">
   <parameter name="deviceFamily">
@@ -4186,7 +4186,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="master_0.master/mm_interconnect_0.master_0_master"
    kind="avalon"
-   version="16.0"
+   version="17.0"
    start="master_0.master"
    end="mm_interconnect_0.master_0_master">
   <parameter name="arbitrationPriority">
@@ -4237,7 +4237,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/mm_interconnect_0.clk_0_clk"
    kind="clock"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk"
    end="mm_interconnect_0.clk_0_clk">
   <parameter name="deviceFamily">
@@ -4264,7 +4264,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="mm_interconnect_0.rs232_0_avalon_rs232_slave/rs232_0.avalon_rs232_slave"
    kind="avalon"
-   version="16.0"
+   version="17.0"
    start="mm_interconnect_0.rs232_0_avalon_rs232_slave"
    end="rs232_0.avalon_rs232_slave">
   <parameter name="arbitrationPriority">
@@ -4315,7 +4315,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="mm_interconnect_0.rs232_1_avalon_rs232_slave/rs232_1.avalon_rs232_slave"
    kind="avalon"
-   version="16.0"
+   version="17.0"
    start="mm_interconnect_0.rs232_1_avalon_rs232_slave"
    end="rs232_1.avalon_rs232_slave">
   <parameter name="arbitrationPriority">
@@ -4366,7 +4366,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/rs232_0.reset"
    kind="reset"
-   version="16.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="rs232_0.reset">
   <parameter name="deviceFamily">
@@ -4393,7 +4393,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/rs232_1.reset"
    kind="reset"
-   version="16.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="rs232_1.reset">
   <parameter name="deviceFamily">
@@ -4420,7 +4420,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/mm_interconnect_0.master_0_clk_reset_reset_bridge_in_reset"
    kind="reset"
-   version="16.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="mm_interconnect_0.master_0_clk_reset_reset_bridge_in_reset">
   <parameter name="deviceFamily">
@@ -4447,7 +4447,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/mm_interconnect_0.rs232_0_reset_reset_bridge_in_reset"
    kind="reset"
-   version="16.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="mm_interconnect_0.rs232_0_reset_reset_bridge_in_reset">
   <parameter name="deviceFamily">
@@ -4474,7 +4474,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk_reset/rst_controller.reset_in0"
    kind="reset"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk_reset"
    end="rst_controller.reset_in0">
   <parameter name="deviceFamily">
@@ -4501,7 +4501,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/rst_controller.clk"
    kind="clock"
-   version="16.0"
+   version="17.0"
    start="clk_0.clk"
    end="rst_controller.clk">
   <parameter name="deviceFamily">
@@ -4531,7 +4531,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>Clock Source</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4539,7 +4539,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4547,7 +4547,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Input</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4555,7 +4555,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Output</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4563,7 +4563,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Output</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4571,7 +4571,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>JTAG to Avalon Master Bridge</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>5</instanceCount>
@@ -4579,7 +4579,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>6</instanceCount>
@@ -4587,7 +4587,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Input</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4595,7 +4595,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Avalon Memory Mapped Master</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4603,7 +4603,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Output</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4611,7 +4611,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>RS232 UART</displayName>
-  <version>15.1</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4619,7 +4619,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Avalon Memory Mapped Slave</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4627,7 +4627,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Interrupt Sender</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4635,7 +4635,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Conduit</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4643,7 +4643,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>MM Interconnect</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4651,7 +4651,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>Merlin Reset Controller</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4659,7 +4659,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Clock Connection</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4667,7 +4667,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Reset Connection</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4675,7 +4675,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Avalon Memory Mapped Connection</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4683,7 +4683,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Clock Connection</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>5</instanceCount>
@@ -4691,8 +4691,8 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Reset Connection</displayName>
-  <version>16.0</version>
+  <version>17.0</version>
  </plugin>
- <reportVersion>16.0 222</reportVersion>
- <uniqueIdentifier>6476BA9468190000015658A037FB</uniqueIdentifier>
+ <reportVersion>17.0 602</reportVersion>
+ <uniqueIdentifier>685B35C280900000015E71EE47FD</uniqueIdentifier>
 </EnsembleReport>

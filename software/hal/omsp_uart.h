@@ -3,6 +3,5 @@
 
 void uartinit();
 int putchar(int txdata);
-extern char rxdata;
 
 #endif

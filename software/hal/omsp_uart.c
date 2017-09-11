@@ -15,9 +15,3 @@ int putchar (int txdata) {
   return 0;
 }
 
-char rxdata;
-
-wakeup interrupt (UART_RX_VECTOR) INT_uart_rx(void) {
-  rxdata = UART_RXD;
-  UART_STAT = UART_RX_PND;
-}

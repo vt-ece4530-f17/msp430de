@@ -16,12 +16,12 @@ int main(void) {
   while (1) {
     k = 1;
     do {
-	  putchar(c16[((c>>12) & 0xF)]);
-	  putchar(c16[((c>>8 ) & 0xF)]);
-	  putchar(c16[((c>>4 ) & 0xF)]);
-	  putchar(c16[((c    ) & 0xF)]);
-	  putchar('\n');
-	  
+      putchar(c16[((c>>12) & 0xF)]);
+      putchar(c16[((c>>8 ) & 0xF)]);
+      putchar(c16[((c>>4 ) & 0xF)]);
+      putchar(c16[((c    ) & 0xF)]);
+      putchar('\n');
+      
       de0nano_ledg(k);
       long_delay(100);
       k <<= 1;
@@ -31,7 +31,6 @@ int main(void) {
 
   myprintf("exit program\n");
   
-  dint();
   LPM0;
 
   return 0;

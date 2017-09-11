@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<EnsembleReport name="mspconnect" kind="system" version="15.0" fabric="QSYS">
- <!-- Format version 15.0 145 (Future versions may contain additional information.) -->
- <!-- 2016.06.04.14:50:46 -->
+<EnsembleReport name="mspconnect" kind="system" version="17.0" fabric="QSYS">
+ <!-- Format version 17.0 602 (Future versions may contain additional information.) -->
+ <!-- 2017.09.11.08:01:58 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1465066231</value>
+  <value>1505131312</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -147,7 +147,7 @@
   <visible>false</visible>
   <valid>true</valid>
  </parameter>
- <module name="clk_0" kind="clock_source" version="15.0" path="clk_0">
+ <module name="clk_0" kind="clock_source" version="17.0" path="clk_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="clockFrequency">
@@ -200,7 +200,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk_in" kind="clock_sink" version="15.0">
+  <interface name="clk_in" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -265,7 +265,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="clk_in_reset" kind="reset_sink" version="15.0">
+  <interface name="clk_in_reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -314,7 +314,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset_n</role>
    </port>
   </interface>
-  <interface name="clk" kind="clock_source" version="15.0">
+  <interface name="clk" kind="clock_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -413,7 +413,7 @@ parameters are a RESULT of the module parameters. -->
     <name>rst_controller.clk</name>
    </clockDomainMember>
   </interface>
-  <interface name="clk_reset" kind="reset_source" version="15.0">
+  <interface name="clk_reset" kind="reset_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -478,7 +478,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="master_0"
    kind="altera_jtag_avalon_master"
-   version="15.0"
+   version="17.0"
    path="master_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -572,7 +572,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="15.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -617,7 +617,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="clk_reset" kind="reset_sink" version="15.0">
+  <interface name="clk_reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -662,21 +662,13 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="master" kind="avalon_master" version="15.0">
+  <interface name="master" kind="avalon_master" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <assignment>
-    <name>debug.controlledBy</name>
-    <value>in_stream</value>
-   </assignment>
-   <assignment>
     <name>debug.providesServices</name>
     <value>master</value>
-   </assignment>
-   <assignment>
-    <name>debug.typeName</name>
-    <value>altera_jtag_avalon_master.master</value>
    </assignment>
    <assignment>
     <name>debug.visible</name>
@@ -997,7 +989,7 @@ parameters are a RESULT of the module parameters. -->
     <span>4294967296</span>
    </memoryBlock>
   </interface>
-  <interface name="master_reset" kind="reset_source" version="15.0">
+  <interface name="master_reset" kind="reset_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1062,24 +1054,24 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="rs232_0"
    kind="altera_up_avalon_rs232"
-   version="15.0"
+   version="17.0"
    path="rs232_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
+  <parameter name="ref_clk_freq">
+   <type>double</type>
+   <value>5.0E7</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="avalon_bus_type">
    <type>java.lang.String</type>
    <value>Memory Mapped</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="clk_rate">
-   <type>int</type>
-   <value>50000000</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="baud">
@@ -1150,7 +1142,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="15.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1211,7 +1203,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="reset" kind="reset_sink" version="15.0">
+  <interface name="reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1256,25 +1248,25 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="avalon_rs232_slave" kind="avalon_slave" version="15.0">
+  <interface name="avalon_rs232_slave" kind="avalon_slave" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <assignment>
     <name>embeddedsw.configuration.isFlash</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <assignment>
     <name>embeddedsw.configuration.isMemoryDevice</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <assignment>
     <name>embeddedsw.configuration.isNonVolatileStorage</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <assignment>
     <name>embeddedsw.configuration.isPrintableDevice</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <parameter name="addressAlignment">
     <type>com.altera.sopcmodel.avalon.AvalonConnectionPoint$AddressAlignment</type>
@@ -1633,7 +1625,7 @@ parameters are a RESULT of the module parameters. -->
     <role>readdata</role>
    </port>
   </interface>
-  <interface name="interrupt" kind="interrupt_sender" version="15.0">
+  <interface name="interrupt" kind="interrupt_sender" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1710,7 +1702,7 @@ parameters are a RESULT of the module parameters. -->
     <role>irq</role>
    </port>
   </interface>
-  <interface name="external_interface" kind="conduit_end" version="15.0">
+  <interface name="external_interface" kind="conduit_end" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1765,24 +1757,24 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="rs232_1"
    kind="altera_up_avalon_rs232"
-   version="15.0"
+   version="17.0"
    path="rs232_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
+  <parameter name="ref_clk_freq">
+   <type>double</type>
+   <value>5.0E7</value>
+   <derived>true</derived>
+   <enabled>false</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+  </parameter>
   <parameter name="avalon_bus_type">
    <type>java.lang.String</type>
    <value>Memory Mapped</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="clk_rate">
-   <type>int</type>
-   <value>50000000</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="baud">
@@ -1853,7 +1845,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="15.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1914,7 +1906,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="reset" kind="reset_sink" version="15.0">
+  <interface name="reset" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -1959,25 +1951,25 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="avalon_rs232_slave" kind="avalon_slave" version="15.0">
+  <interface name="avalon_rs232_slave" kind="avalon_slave" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <assignment>
     <name>embeddedsw.configuration.isFlash</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <assignment>
     <name>embeddedsw.configuration.isMemoryDevice</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <assignment>
     <name>embeddedsw.configuration.isNonVolatileStorage</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <assignment>
     <name>embeddedsw.configuration.isPrintableDevice</name>
-    <value>0</value>
+    <value>false</value>
    </assignment>
    <parameter name="addressAlignment">
     <type>com.altera.sopcmodel.avalon.AvalonConnectionPoint$AddressAlignment</type>
@@ -2336,7 +2328,7 @@ parameters are a RESULT of the module parameters. -->
     <role>readdata</role>
    </port>
   </interface>
-  <interface name="interrupt" kind="interrupt_sender" version="15.0">
+  <interface name="interrupt" kind="interrupt_sender" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2413,7 +2405,7 @@ parameters are a RESULT of the module parameters. -->
     <role>irq</role>
    </port>
   </interface>
-  <interface name="external_interface" kind="conduit_end" version="15.0">
+  <interface name="external_interface" kind="conduit_end" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2468,7 +2460,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="mm_interconnect_0"
    kind="altera_mm_interconnect"
-   version="15.0"
+   version="17.0"
    path="mm_interconnect_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -2486,7 +2478,7 @@ the requested settings for a module instance. -->
   </assignment>
   <parameter name="COMPOSE_CONTENTS">
    <type>java.lang.String</type>
-   <value><![CDATA[add_instance {master_0_master_translator} {altera_merlin_master_translator};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESS_W} {32};set_instance_parameter_value {master_0_master_translator} {AV_DATA_W} {32};set_instance_parameter_value {master_0_master_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {master_0_master_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {master_0_master_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {master_0_master_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {master_0_master_translator} {AV_READLATENCY} {0};set_instance_parameter_value {master_0_master_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {master_0_master_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {master_0_master_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {master_0_master_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {master_0_master_translator} {USE_READDATA} {1};set_instance_parameter_value {master_0_master_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {master_0_master_translator} {USE_READ} {1};set_instance_parameter_value {master_0_master_translator} {USE_WRITE} {1};set_instance_parameter_value {master_0_master_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {master_0_master_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {master_0_master_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {master_0_master_translator} {USE_CHIPSELECT} {0};set_instance_parameter_value {master_0_master_translator} {USE_ADDRESS} {1};set_instance_parameter_value {master_0_master_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {master_0_master_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {master_0_master_translator} {USE_CLKEN} {0};set_instance_parameter_value {master_0_master_translator} {USE_READDATAVALID} {1};set_instance_parameter_value {master_0_master_translator} {USE_WAITREQUEST} {1};set_instance_parameter_value {master_0_master_translator} {USE_LOCK} {0};set_instance_parameter_value {master_0_master_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {master_0_master_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {master_0_master_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESS_SYMBOLS} {1};set_instance_parameter_value {master_0_master_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {master_0_master_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {master_0_master_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {master_0_master_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {master_0_master_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {64};set_instance_parameter_value {master_0_master_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {master_0_master_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {master_0_master_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {master_0_master_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {master_0_master_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {master_0_master_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {master_0_master_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {master_0_master_translator} {AV_ALWAYSBURSTMAXBURST} {0};add_instance {rs232_0_avalon_rs232_slave_translator} {altera_merlin_slave_translator};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ADDRESS_W} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_DATA_W} {32};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_DATA_W} {32};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_READLATENCY} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_READ_WAIT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READDATA} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READ} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITE} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_ADDRESS} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_LOCK} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_AV_CLKEN} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {rs232_1_avalon_rs232_slave_translator} {altera_merlin_slave_translator};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ADDRESS_W} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_DATA_W} {32};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_DATA_W} {32};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_READLATENCY} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_READ_WAIT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READDATA} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READ} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITE} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_ADDRESS} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_LOCK} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_AV_CLKEN} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {master_0_master_agent} {altera_merlin_master_agent};set_instance_parameter_value {master_0_master_agent} {PKT_ORI_BURST_SIZE_H} {101};set_instance_parameter_value {master_0_master_agent} {PKT_ORI_BURST_SIZE_L} {99};set_instance_parameter_value {master_0_master_agent} {PKT_RESPONSE_STATUS_H} {98};set_instance_parameter_value {master_0_master_agent} {PKT_RESPONSE_STATUS_L} {97};set_instance_parameter_value {master_0_master_agent} {PKT_QOS_H} {86};set_instance_parameter_value {master_0_master_agent} {PKT_QOS_L} {86};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_SIDEBAND_H} {84};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_SIDEBAND_L} {84};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_SIDEBAND_H} {83};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_SIDEBAND_L} {83};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_TYPE_H} {82};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_TYPE_L} {81};set_instance_parameter_value {master_0_master_agent} {PKT_CACHE_H} {96};set_instance_parameter_value {master_0_master_agent} {PKT_CACHE_L} {93};set_instance_parameter_value {master_0_master_agent} {PKT_THREAD_ID_H} {89};set_instance_parameter_value {master_0_master_agent} {PKT_THREAD_ID_L} {89};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_SIZE_H} {80};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_SIZE_L} {78};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_EXCLUSIVE} {73};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {master_0_master_agent} {PKT_BEGIN_BURST} {85};set_instance_parameter_value {master_0_master_agent} {PKT_PROTECTION_H} {92};set_instance_parameter_value {master_0_master_agent} {PKT_PROTECTION_L} {90};set_instance_parameter_value {master_0_master_agent} {PKT_BURSTWRAP_H} {77};set_instance_parameter_value {master_0_master_agent} {PKT_BURSTWRAP_L} {77};set_instance_parameter_value {master_0_master_agent} {PKT_BYTE_CNT_H} {76};set_instance_parameter_value {master_0_master_agent} {PKT_BYTE_CNT_L} {74};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_H} {67};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_L} {36};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_COMPRESSED_READ} {68};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_POSTED} {69};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_READ} {71};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_H} {31};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_L} {0};set_instance_parameter_value {master_0_master_agent} {PKT_BYTEEN_H} {35};set_instance_parameter_value {master_0_master_agent} {PKT_BYTEEN_L} {32};set_instance_parameter_value {master_0_master_agent} {PKT_SRC_ID_H} {87};set_instance_parameter_value {master_0_master_agent} {PKT_SRC_ID_L} {87};set_instance_parameter_value {master_0_master_agent} {PKT_DEST_ID_H} {88};set_instance_parameter_value {master_0_master_agent} {PKT_DEST_ID_L} {88};set_instance_parameter_value {master_0_master_agent} {ST_DATA_W} {102};set_instance_parameter_value {master_0_master_agent} {ST_CHANNEL_W} {2};set_instance_parameter_value {master_0_master_agent} {AV_BURSTCOUNT_W} {3};set_instance_parameter_value {master_0_master_agent} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {master_0_master_agent} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {master_0_master_agent} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {master_0_master_agent} {ADDR_MAP} {<?xml version="1.0" encoding="UTF-8"?>
+   <value><![CDATA[add_instance {master_0_master_translator} {altera_merlin_master_translator};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESS_W} {32};set_instance_parameter_value {master_0_master_translator} {AV_DATA_W} {32};set_instance_parameter_value {master_0_master_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {master_0_master_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {master_0_master_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {master_0_master_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {master_0_master_translator} {AV_READLATENCY} {0};set_instance_parameter_value {master_0_master_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {master_0_master_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {master_0_master_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {master_0_master_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {master_0_master_translator} {USE_READDATA} {1};set_instance_parameter_value {master_0_master_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {master_0_master_translator} {USE_READ} {1};set_instance_parameter_value {master_0_master_translator} {USE_WRITE} {1};set_instance_parameter_value {master_0_master_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {master_0_master_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {master_0_master_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {master_0_master_translator} {USE_CHIPSELECT} {0};set_instance_parameter_value {master_0_master_translator} {USE_ADDRESS} {1};set_instance_parameter_value {master_0_master_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {master_0_master_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {master_0_master_translator} {USE_CLKEN} {0};set_instance_parameter_value {master_0_master_translator} {USE_READDATAVALID} {1};set_instance_parameter_value {master_0_master_translator} {USE_WAITREQUEST} {1};set_instance_parameter_value {master_0_master_translator} {USE_LOCK} {0};set_instance_parameter_value {master_0_master_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {master_0_master_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {master_0_master_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESS_SYMBOLS} {1};set_instance_parameter_value {master_0_master_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {master_0_master_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {master_0_master_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {master_0_master_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {master_0_master_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {64};set_instance_parameter_value {master_0_master_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {master_0_master_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {master_0_master_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {master_0_master_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {master_0_master_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {master_0_master_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {master_0_master_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {master_0_master_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {master_0_master_translator} {SYNC_RESET} {0};add_instance {rs232_0_avalon_rs232_slave_translator} {altera_merlin_slave_translator};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ADDRESS_W} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_DATA_W} {32};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_DATA_W} {32};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_READLATENCY} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_READ_WAIT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READDATA} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READ} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITE} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_ADDRESS} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_LOCK} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_AV_CLKEN} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {rs232_0_avalon_rs232_slave_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {rs232_1_avalon_rs232_slave_translator} {altera_merlin_slave_translator};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ADDRESS_W} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_DATA_W} {32};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_DATA_W} {32};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_READLATENCY} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_READ_WAIT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READDATA} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READ} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITE} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_ADDRESS} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_LOCK} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_AV_CLKEN} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {rs232_1_avalon_rs232_slave_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {master_0_master_agent} {altera_merlin_master_agent};set_instance_parameter_value {master_0_master_agent} {PKT_ORI_BURST_SIZE_H} {101};set_instance_parameter_value {master_0_master_agent} {PKT_ORI_BURST_SIZE_L} {99};set_instance_parameter_value {master_0_master_agent} {PKT_RESPONSE_STATUS_H} {98};set_instance_parameter_value {master_0_master_agent} {PKT_RESPONSE_STATUS_L} {97};set_instance_parameter_value {master_0_master_agent} {PKT_QOS_H} {86};set_instance_parameter_value {master_0_master_agent} {PKT_QOS_L} {86};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_SIDEBAND_H} {84};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_SIDEBAND_L} {84};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_SIDEBAND_H} {83};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_SIDEBAND_L} {83};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_TYPE_H} {82};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_TYPE_L} {81};set_instance_parameter_value {master_0_master_agent} {PKT_CACHE_H} {96};set_instance_parameter_value {master_0_master_agent} {PKT_CACHE_L} {93};set_instance_parameter_value {master_0_master_agent} {PKT_THREAD_ID_H} {89};set_instance_parameter_value {master_0_master_agent} {PKT_THREAD_ID_L} {89};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_SIZE_H} {80};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_SIZE_L} {78};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_EXCLUSIVE} {73};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {master_0_master_agent} {PKT_BEGIN_BURST} {85};set_instance_parameter_value {master_0_master_agent} {PKT_PROTECTION_H} {92};set_instance_parameter_value {master_0_master_agent} {PKT_PROTECTION_L} {90};set_instance_parameter_value {master_0_master_agent} {PKT_BURSTWRAP_H} {77};set_instance_parameter_value {master_0_master_agent} {PKT_BURSTWRAP_L} {77};set_instance_parameter_value {master_0_master_agent} {PKT_BYTE_CNT_H} {76};set_instance_parameter_value {master_0_master_agent} {PKT_BYTE_CNT_L} {74};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_H} {67};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_L} {36};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_COMPRESSED_READ} {68};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_POSTED} {69};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_READ} {71};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_H} {31};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_L} {0};set_instance_parameter_value {master_0_master_agent} {PKT_BYTEEN_H} {35};set_instance_parameter_value {master_0_master_agent} {PKT_BYTEEN_L} {32};set_instance_parameter_value {master_0_master_agent} {PKT_SRC_ID_H} {87};set_instance_parameter_value {master_0_master_agent} {PKT_SRC_ID_L} {87};set_instance_parameter_value {master_0_master_agent} {PKT_DEST_ID_H} {88};set_instance_parameter_value {master_0_master_agent} {PKT_DEST_ID_L} {88};set_instance_parameter_value {master_0_master_agent} {ST_DATA_W} {102};set_instance_parameter_value {master_0_master_agent} {ST_CHANNEL_W} {2};set_instance_parameter_value {master_0_master_agent} {AV_BURSTCOUNT_W} {3};set_instance_parameter_value {master_0_master_agent} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {master_0_master_agent} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {master_0_master_agent} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {master_0_master_agent} {ADDR_MAP} {<?xml version="1.0" encoding="UTF-8"?>
 <address_map>
  <slave
    id="0"
@@ -2553,7 +2545,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk_0_clk" kind="clock_sink" version="15.0">
+  <interface name="clk_0_clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2601,7 +2593,7 @@ parameters are a RESULT of the module parameters. -->
   <interface
      name="master_0_clk_reset_reset_bridge_in_reset"
      kind="reset_sink"
-     version="15.0">
+     version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2649,7 +2641,7 @@ parameters are a RESULT of the module parameters. -->
   <interface
      name="rs232_0_reset_reset_bridge_in_reset"
      kind="reset_sink"
-     version="15.0">
+     version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -2694,7 +2686,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="master_0_master" kind="avalon_slave" version="15.0">
+  <interface name="master_0_master" kind="avalon_slave" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3081,7 +3073,7 @@ parameters are a RESULT of the module parameters. -->
     <role>writedata</role>
    </port>
   </interface>
-  <interface name="rs232_0_avalon_rs232_slave" kind="avalon_master" version="15.0">
+  <interface name="rs232_0_avalon_rs232_slave" kind="avalon_master" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3394,7 +3386,7 @@ parameters are a RESULT of the module parameters. -->
     <span>8</span>
    </memoryBlock>
   </interface>
-  <interface name="rs232_1_avalon_rs232_slave" kind="avalon_master" version="15.0">
+  <interface name="rs232_1_avalon_rs232_slave" kind="avalon_master" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3711,7 +3703,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="rst_controller"
    kind="altera_reset_controller"
-   version="15.0"
+   version="17.0"
    path="rst_controller">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -3931,7 +3923,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="reset_in0" kind="reset_sink" version="15.0">
+  <interface name="reset_in0" kind="reset_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -3976,7 +3968,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="clk" kind="clock_sink" version="15.0">
+  <interface name="clk" kind="clock_sink" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -4021,7 +4013,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="reset_out" kind="reset_source" version="15.0">
+  <interface name="reset_out" kind="reset_source" version="17.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -4086,7 +4078,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/master_0.clk"
    kind="clock"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk"
    end="master_0.clk">
   <parameter name="deviceFamily">
@@ -4113,7 +4105,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/rs232_0.clk"
    kind="clock"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk"
    end="rs232_0.clk">
   <parameter name="deviceFamily">
@@ -4140,7 +4132,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/rs232_1.clk"
    kind="clock"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk"
    end="rs232_1.clk">
   <parameter name="deviceFamily">
@@ -4167,7 +4159,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk_reset/master_0.clk_reset"
    kind="reset"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk_reset"
    end="master_0.clk_reset">
   <parameter name="deviceFamily">
@@ -4194,7 +4186,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="master_0.master/mm_interconnect_0.master_0_master"
    kind="avalon"
-   version="15.0"
+   version="17.0"
    start="master_0.master"
    end="mm_interconnect_0.master_0_master">
   <parameter name="arbitrationPriority">
@@ -4245,7 +4237,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/mm_interconnect_0.clk_0_clk"
    kind="clock"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk"
    end="mm_interconnect_0.clk_0_clk">
   <parameter name="deviceFamily">
@@ -4272,7 +4264,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="mm_interconnect_0.rs232_0_avalon_rs232_slave/rs232_0.avalon_rs232_slave"
    kind="avalon"
-   version="15.0"
+   version="17.0"
    start="mm_interconnect_0.rs232_0_avalon_rs232_slave"
    end="rs232_0.avalon_rs232_slave">
   <parameter name="arbitrationPriority">
@@ -4323,7 +4315,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="mm_interconnect_0.rs232_1_avalon_rs232_slave/rs232_1.avalon_rs232_slave"
    kind="avalon"
-   version="15.0"
+   version="17.0"
    start="mm_interconnect_0.rs232_1_avalon_rs232_slave"
    end="rs232_1.avalon_rs232_slave">
   <parameter name="arbitrationPriority">
@@ -4374,7 +4366,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/rs232_0.reset"
    kind="reset"
-   version="15.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="rs232_0.reset">
   <parameter name="deviceFamily">
@@ -4401,7 +4393,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/rs232_1.reset"
    kind="reset"
-   version="15.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="rs232_1.reset">
   <parameter name="deviceFamily">
@@ -4428,7 +4420,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/mm_interconnect_0.master_0_clk_reset_reset_bridge_in_reset"
    kind="reset"
-   version="15.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="mm_interconnect_0.master_0_clk_reset_reset_bridge_in_reset">
   <parameter name="deviceFamily">
@@ -4455,7 +4447,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="rst_controller.reset_out/mm_interconnect_0.rs232_0_reset_reset_bridge_in_reset"
    kind="reset"
-   version="15.0"
+   version="17.0"
    start="rst_controller.reset_out"
    end="mm_interconnect_0.rs232_0_reset_reset_bridge_in_reset">
   <parameter name="deviceFamily">
@@ -4482,7 +4474,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk_reset/rst_controller.reset_in0"
    kind="reset"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk_reset"
    end="rst_controller.reset_in0">
   <parameter name="deviceFamily">
@@ -4509,7 +4501,7 @@ parameters are a RESULT of the module parameters. -->
  <connection
    name="clk_0.clk/rst_controller.clk"
    kind="clock"
-   version="15.0"
+   version="17.0"
    start="clk_0.clk"
    end="rst_controller.clk">
   <parameter name="deviceFamily">
@@ -4539,7 +4531,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>Clock Source</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4547,7 +4539,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4555,7 +4547,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Input</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4563,7 +4555,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Output</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4571,7 +4563,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Output</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4579,7 +4571,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>JTAG to Avalon Master Bridge</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>5</instanceCount>
@@ -4587,7 +4579,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>6</instanceCount>
@@ -4595,7 +4587,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Input</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4603,7 +4595,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Avalon Memory Mapped Master</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4611,7 +4603,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Output</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4619,7 +4611,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>RS232 UART</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4627,7 +4619,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Avalon Memory Mapped Slave</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4635,7 +4627,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Interrupt Sender</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4643,7 +4635,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Conduit</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4651,7 +4643,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>MM Interconnect</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4659,7 +4651,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>Merlin Reset Controller</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4667,7 +4659,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Clock Connection</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -4675,7 +4667,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Reset Connection</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -4683,7 +4675,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Avalon Memory Mapped Connection</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -4691,7 +4683,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Clock Connection</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
  <plugin>
   <instanceCount>5</instanceCount>
@@ -4699,8 +4691,8 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
   <displayName>Reset Connection</displayName>
-  <version>15.0</version>
+  <version>17.0</version>
  </plugin>
- <reportVersion>15.0 145</reportVersion>
- <uniqueIdentifier>6476BA946819000001551CC0AF5C</uniqueIdentifier>
+ <reportVersion>17.0 602</reportVersion>
+ <uniqueIdentifier>38C9862DB8810000015E70D13EB5</uniqueIdentifier>
 </EnsembleReport>
